@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://code004.ml/links/index.html</loc>
+    
+    <lastmod>2019-08-30T07:10:33.370Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://code004.ml/404/index.html</loc>
     
     <lastmod>2019-08-29T11:29:50.929Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://code004.ml/about/index.html</loc>
     
     <lastmod>2019-08-23T11:04:12.518Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://code004.ml/links/index.html</loc>
-    
-    <lastmod>2019-08-21T17:55:20.060Z</lastmod>
     
   </url>
   
