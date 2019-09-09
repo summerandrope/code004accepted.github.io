@@ -950,12 +950,13 @@
           </div>
           
 
-  
-    <div class="comments" id="comments">
-      
-  <script src="https://utteranc.es/client.js" repo="code004Accepted/blog-comments" issue-term="title" theme="github-light" crossorigin="anonymous" async>
-  </script>
+  <div class="comments">
+    <script src="https://utteranc.es/client.js" repo="code004Accepted/blog-comment" issue-term="title" label="Utterances" theme="github-light" crossorigin="anonymous" async>
+    </script>
+  </div>
 
+  
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1461,6 +1462,35 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '2bd2602c65657bc02e45',
+    clientSecret: 'e9b15ea0903656b29d62bbd140bbbe5da76b2508',
+    repo: 'blog-comment',
+    owner: 'code004Accepted',
+    admin: ['code004Accepted'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
 
   
 
