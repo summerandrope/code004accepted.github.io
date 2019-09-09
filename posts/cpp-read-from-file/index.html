@@ -124,18 +124,18 @@
 })();
 </script>
 
-  <meta name="description" content="既然是“简洁教程”，当然就只讲用法不讲原理啦233 C++从文件中读入一般有两个函数：freopen和fopen，这两个函数都在stdio.h（也就是include中所写的cstdio）里面，使用也都很方便，下面我就分别讲一下 freopen用法与理解一般在算法竞赛中我们使用freopen，代码是这样写的： 12345678910#include &amp;lt;iostream&amp;gt;#include">
+  <meta name="description" content="既然是“简洁教程”，当然就只讲用法不讲原理啦233 C++从文件中读入一般有两个函数：freopen和fopen，这两个函数都在stdio.h（也就是include中所写的cstdio）里面，使用也都很方便，下面我就分别讲一下 （还有fstream相关的说明，但是因为我太菜了，所以说明极度简略） （大概2/3处还有一个丧心病狂的演示实验qwq）">
 <meta name="keywords" content="文件读入,freopen,fopen,fprintf,fscanf,C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++文件读入与输出简洁教程">
 <meta property="og:url" content="https://code004.ml/posts/cpp-read-from-file/index.html">
 <meta property="og:site_name" content="code004&#39;s Blog">
-<meta property="og:description" content="既然是“简洁教程”，当然就只讲用法不讲原理啦233 C++从文件中读入一般有两个函数：freopen和fopen，这两个函数都在stdio.h（也就是include中所写的cstdio）里面，使用也都很方便，下面我就分别讲一下 freopen用法与理解一般在算法竞赛中我们使用freopen，代码是这样写的： 12345678910#include &amp;lt;iostream&amp;gt;#include">
+<meta property="og:description" content="既然是“简洁教程”，当然就只讲用法不讲原理啦233 C++从文件中读入一般有两个函数：freopen和fopen，这两个函数都在stdio.h（也就是include中所写的cstdio）里面，使用也都很方便，下面我就分别讲一下 （还有fstream相关的说明，但是因为我太菜了，所以说明极度简略） （大概2/3处还有一个丧心病狂的演示实验qwq）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-08T11:16:11.245Z">
+<meta property="og:updated_time" content="2019-09-09T15:51:18.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++文件读入与输出简洁教程">
-<meta name="twitter:description" content="既然是“简洁教程”，当然就只讲用法不讲原理啦233 C++从文件中读入一般有两个函数：freopen和fopen，这两个函数都在stdio.h（也就是include中所写的cstdio）里面，使用也都很方便，下面我就分别讲一下 freopen用法与理解一般在算法竞赛中我们使用freopen，代码是这样写的： 12345678910#include &amp;lt;iostream&amp;gt;#include">
+<meta name="twitter:description" content="既然是“简洁教程”，当然就只讲用法不讲原理啦233 C++从文件中读入一般有两个函数：freopen和fopen，这两个函数都在stdio.h（也就是include中所写的cstdio）里面，使用也都很方便，下面我就分别讲一下 （还有fstream相关的说明，但是因为我太菜了，所以说明极度简略） （大概2/3处还有一个丧心病狂的演示实验qwq）">
 
 
 
@@ -544,12 +544,24 @@
                 
               
 
-              <time title="创建时间：2019-09-08 15:23:09 / 修改时间：19:16:11" itemprop="dateCreated datePublished" datetime="2019-09-08T15:23:09+08:00">2019-09-08</time>
+              <time title="创建时间：2019-09-08 15:23:09" itemprop="dateCreated datePublished" datetime="2019-09-08T15:23:09+08:00">2019-09-08</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-09-09 23:51:18" itemprop="dateModified" datetime="2019-09-09T23:51:18+08:00">2019-09-09</time>
               
             
           </span>
@@ -610,6 +622,10 @@
       
         <p>既然是“简洁教程”，当然就只讲用法不讲原理啦233</p>
 <p>C++从文件中读入一般有两个函数：<code>freopen</code>和<code>fopen</code>，这两个函数都在<code>stdio.h</code>（也就是include中所写的<code>cstdio</code>）里面，使用也都很方便，下面我就分别讲一下</p>
+<p>（还有<code>fstream</code>相关的说明，但是因为我太菜了，所以说明极度简略）</p>
+<p>（大概2/3处还有一个<strong>丧心病狂</strong>的演示实验qwq）</p>
+<a id="more"></a>
+
 <h1 id="freopen"><a href="#freopen" class="headerlink" title="freopen"></a>freopen</h1><h2 id="用法与理解"><a href="#用法与理解" class="headerlink" title="用法与理解"></a>用法与理解</h2><p>一般在算法竞赛中我们使用<code>freopen</code>，代码是这样写的：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  freopen(<span class="string">"test.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">  freopen(<span class="string">"test.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">  <span class="comment">//write your code here...</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -854,7 +870,7 @@
   <p><span>本文标题:</span>C++文件读入与输出简洁教程</p>
   <p><span>文章作者:</span>code004</p>
   <p><span>发布时间:</span>2019年09月08日 - 15:23:09</p>
-  <p><span>最后更新:</span>2019年09月08日 - 19:16:11</p>
+  <p><span>最后更新:</span>2019年09月09日 - 23:51:18</p>
   <p><span>原始链接:</span><a href="/posts/cpp-read-from-file/" title="C++文件读入与输出简洁教程">https://code004.ml/posts/cpp-read-from-file/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://code004.ml/posts/cpp-read-from-file/" aria-label="复制成功！"></i></span>
   </p>
