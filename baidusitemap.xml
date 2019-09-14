@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://code004.ml/posts/how-to-build-a-hexo-blog/</loc>
+    <lastmod>2019-09-14</lastmod>
+  </url>  <url>
     <loc>https://code004.ml/posts/recent-activities-of-gc-server/</loc>
     <lastmod>2019-09-13</lastmod>
   </url>  <url>
@@ -12,9 +15,6 @@
   </url>  <url>
     <loc>https://code004.ml/posts/cpp-read-from-file/</loc>
     <lastmod>2019-09-09</lastmod>
-  </url>  <url>
-    <loc>https://code004.ml/posts/how-to-build-a-hexo-blog/</loc>
-    <lastmod>2019-08-29</lastmod>
   </url>  <url>
     <loc>https://code004.ml/posts/spiderman-leave-mcu/</loc>
     <lastmod>2019-08-29</lastmod>

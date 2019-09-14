@@ -496,6 +496,218 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://code004.ml/posts/how-to-build-a-hexo-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code004">
+      <meta itemprop="description" content="一个OIer的学校生活与OI竞赛记录">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code004's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/posts/how-to-build-a-hexo-blog/" class="post-title-link" itemprop="url">Hexo博客搭建—从入门到精通</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+
+          
+            <i class="fa fa-thumb-tack"></i>
+            <font color="808080">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-25 20:59:16" itemprop="dateCreated datePublished" datetime="2019-08-25T20:59:16+08:00">2019-08-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-09-14 20:23:34" itemprop="dateModified" datetime="2019-09-14T20:23:34+08:00">2019-09-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随记/" itemprop="url" rel="index"><span itemprop="name">随记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>注：本文部分内容来自<a href="https://ouuan.github.io" rel="external nofollow noopener noreferrer" target="_blank">ouuan的博客</a>，<a href="https://ouuan.github.io/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/" rel="external nofollow noopener noreferrer" target="_blank">原文地址</a></p>
+<hr>
+<p>我一直以来认为，要弄一个自己的博客或者网站，必须到某些什么“建站工具”里购买建站套装，再自己买一个域名</p>
+<p>这样算下来，一年至少得两三百RMB</p>
+<p>而且，域名什么的配置繁杂，非常麻烦</p>
+<p>所以，一直以来我都是用的CSDN/博客园建的博客，想想SEO也做的好（SEO好就意味着你写的东西可以在百度/谷歌等搜索引擎上被别人查到），也就没什么怨言</p>
+<p>但是，众所周知，CSDN和博客园的广告一大堆，根本不是我能容忍的</p>
+<p>而且，无论选择什么主题，都难看得要死qwq</p>
+<p>（当然了，最近有一位dalao弄出了博客园的极致美化，请看<a href="https://github.com/BNDong/Cnblogs-Theme-SimpleMemory/" target="_blank" rel="noopener">BNDong/Cnblogs-Theme-SimpleMemory</a>，这个其实还不错）</p>
+<p>就在今年3月份，我才知道还有这样一个东西的存在</p>
+<p>Hexo</p>
+<p>这个东西可以帮你快速将您用markdown和Latex写的文章渲染为html文件，并借助Github/Coding/Gitee Pages快速发布。</p>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>阅读完本文后，您可以做到：</p>
+<ul>
+<li>一分钱不花搭建一个美丽而简洁的博客（具体由主题决定）</li>
+<li>拥有一个（或者多个）简短的免费顶级域名</li>
+<li>限制您的博客仅限某些IP地址访问，或者拒绝某些IP地址访问</li>
+<li>轻松写作/发布博客</li>
+<li>做好百度与谷歌的SEO优化，其他搜索引擎类似</li>
+</ul>
+<p>注：如果您要查看某个功能的设置，请直接点击文章左边的目录（TOC）直达</p>
+<p>本文基于Hexo 3.9.0，文中不会提及因不同版本造成的差异（不过其实也没什么差异qwq</p>
+<p>本文中提到的node.js和git安装仅适用于Windows，如果您使用其他系统请自行搜索下载</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/posts/how-to-build-a-hexo-blog/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+<div>
+    
+</div>
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://code004.ml/posts/notice-about-junior-grade-9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1380,214 +1592,6 @@
           
             <div class="post-button text-center">
               <a class="btn" href="/posts/about-wngmsog/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-<div>
-    
-</div>
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://code004.ml/posts/how-to-build-a-hexo-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="code004">
-      <meta itemprop="description" content="一个OIer的学校生活与OI竞赛记录">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="code004's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/posts/how-to-build-a-hexo-blog/" class="post-title-link" itemprop="url">Hexo博客搭建—从入门到精通</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-
-          
-          
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-25 20:59:16" itemprop="dateCreated datePublished" datetime="2019-08-25T20:59:16+08:00">2019-08-25</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-29 18:35:49" itemprop="dateModified" datetime="2019-08-29T18:35:49+08:00">2019-08-29</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随记/" itemprop="url" rel="index"><span itemprop="name">随记</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>注：本文部分内容来自<a href="https://ouuan.github.io" rel="external nofollow noopener noreferrer" target="_blank">ouuan的博客</a>，<a href="https://ouuan.github.io/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/" rel="external nofollow noopener noreferrer" target="_blank">原文地址</a></p>
-<hr>
-<p>我一直以来认为，要弄一个自己的博客或者网站，必须到某些什么“建站工具”里购买建站套装，再自己买一个域名</p>
-<p>这样算下来，一年至少得两三百RMB</p>
-<p>而且，域名什么的配置繁杂，非常麻烦</p>
-<p>所以，一直以来我都是用的CSDN/博客园建的博客，想想SEO也做的好（SEO好就意味着你写的东西可以在百度/谷歌等搜索引擎上被别人查到），也就没什么怨言</p>
-<p>但是，众所周知，CSDN和博客园的广告一大堆，根本不是我能容忍的</p>
-<p>而且，无论选择什么主题，都难看得要死qwq</p>
-<p>（当然了，最近有一位dalao弄出了博客园的极致美化，请看<a href="https://github.com/BNDong/Cnblogs-Theme-SimpleMemory/" target="_blank" rel="noopener">BNDong/Cnblogs-Theme-SimpleMemory</a>，这个其实还不错）</p>
-<p>就在今年3月份，我才知道还有这样一个东西的存在</p>
-<p>Hexo</p>
-<p>这个东西可以帮你快速将您用markdown和Latex写的文章渲染为html文件，并借助Github/Coding/Gitee Pages快速发布。</p>
-<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>阅读完本文后，您可以做到：</p>
-<ul>
-<li>一分钱不花搭建一个美丽而简洁的博客（具体由主题决定）</li>
-<li>拥有一个（或者多个）简短的免费顶级域名</li>
-<li>限制您的博客仅限某些IP地址访问，或者拒绝某些IP地址访问</li>
-<li>轻松写作/发布博客</li>
-<li>做好百度与谷歌的SEO优化，其他搜索引擎类似</li>
-</ul>
-<p>注：如果您要查看某个功能的设置，请直接点击文章左边的目录（TOC）直达</p>
-<p>本文基于Hexo 3.9.0，文中不会提及因不同版本造成的差异（不过其实也没什么差异qwq</p>
-<p>本文中提到的node.js和git安装仅适用于Windows，如果您使用其他系统请自行搜索下载</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/posts/how-to-build-a-hexo-blog/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>

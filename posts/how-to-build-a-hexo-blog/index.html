@@ -146,7 +146,7 @@
 <meta property="og:image" content="https://code004.ml/posts/how-to-build-a-hexo-blog/fontawesome.png">
 <meta property="og:image" content="https://code004.ml/posts/how-to-build-a-hexo-blog/sidebar.png">
 <meta property="og:image" content="https://code004.ml/posts/how-to-build-a-hexo-blog/ssh-key.png">
-<meta property="og:updated_time" content="2019-08-29T10:35:49.516Z">
+<meta property="og:updated_time" content="2019-09-14T12:23:34.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建—从入门到精通">
 <meta name="twitter:description" content="注：本文部分内容来自ouuan的博客，原文地址  我一直以来认为，要弄一个自己的博客或者网站，必须到某些什么“建站工具”里购买建站套装，再自己买一个域名 这样算下来，一年至少得两三百RMB 而且，域名什么的配置繁杂，非常麻烦 所以，一直以来我都是用的CSDN/博客园建的博客，想想SEO也做的好（SEO好就意味着你写的东西可以在百度/谷歌等搜索引擎上被别人查到），也就没什么怨言 但是，众所周知，CS">
@@ -540,6 +540,10 @@
         <div class="post-meta">
 
           
+            <i class="fa fa-thumb-tack"></i>
+            <font color="808080">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
           
           <span class="post-time">
 
@@ -576,7 +580,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-29 18:35:49" itemprop="dateModified" datetime="2019-08-29T18:35:49+08:00">2019-08-29</time>
+                <time title="修改时间：2019-09-14 20:23:34" itemprop="dateModified" datetime="2019-09-14T20:23:34+08:00">2019-09-14</time>
               
             
           </span>
@@ -844,7 +848,7 @@
 <p>一共是<code>back2top</code>和<code>chat</code>两个设置，<code>back2top</code>是指侧边栏底部的回到顶部按钮，建议开启，<code>scrollpercent</code>是指在按钮旁边显示页面已经阅读百分之多少，详见上面图片里的4</p>
 <p><code>chat</code>是在侧边栏的聊天按钮设置，建议不要开启，设置麻烦，而且Bug很多，会导致博客加载很慢</p>
 <p>好的，侧边栏设置到此结束，现在基本上你已经配置好NexT主题的界面了，不过…你的网站还是本地的！先讲一下pages搭建，再继续谈NexT和其它主题的配置及高级优化吧qwq</p>
-<h1 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h1><p>现在，你应该还什么文章都没写吧qwq 不过在之前的<code>hexo s</code>的时候可以看到，你的博客里已经有一篇Hello World的文章了！这是Hexo帮你写的，里面也有一些教你写文章的说明，这个等会在解释</p>
+<h1 id="测试发布博客"><a href="#测试发布博客" class="headerlink" title="测试发布博客"></a>测试发布博客</h1><p>现在，你应该还什么文章都没写吧qwq 不过在之前的<code>hexo s</code>的时候可以看到，你的博客里已经有一篇Hello World的文章了！这是Hexo帮你写的，里面也有一些教你写文章的说明，这个等会在解释</p>
 <p>现在最重要的是，怎么发布你的博客… 你总不可能让你的朋友们都来你的电脑上才能看到博客吧！</p>
 <p>好的，废话不多说，我们来先讲一下怎么把你的博客发布到Github/Coding/Gitee</p>
 <p>为了把本地仓库的内容传送到GitHub上，需要配置ssh key，你可以把ssh key理解为一个身份验证码，在你把你的博客或者其他内容传送到Github上时，你需要进行身份验证。无论是你的博客还是其他代码仓库都是如此（不然别人就可以随便瞎改你的代码仓库了）</p>
@@ -895,9 +899,48 @@
 <li><code>hexo d</code>是<code>hexo deploy</code>的缩写，把生成的站点HTML文件发布到git仓库中（或者还有别的发布方式）</li>
 </ol>
 <p><strong>注意：<code>hexo clean</code>不能缩写为<code>hexo c</code>，因为存在命令<code>hexo config</code></strong></p>
-<h1 id="书写博客"><a href="#书写博客" class="headerlink" title="书写博客"></a>书写博客</h1><p>前面已经讲了博客的配置/发布了，现在讲一下如何在Hexo里写一篇博客</p>
+<h1 id="书写并发布博客"><a href="#书写并发布博客" class="headerlink" title="书写并发布博客"></a>书写并发布博客</h1><p>前面已经讲了博客的配置/发布了，现在讲一下如何在Hexo里写一篇博客</p>
+<p>在<strong><em>站点目录</em></strong>中右键，选择<code>Git Bash Here</code>，输入命令<code>hexo new xxx</code>（请把<code>xxx</code>替换为您的文章URL，可以用中文，含有空格可能会出错）</p>
+<p>举个例子：<code>hexo new fuck</code>就是生成一篇URL为<code>fuck</code>的文章，编辑并发布后，您可以在<code>{你的网址}/fuck</code>访问到这篇文章。文章标题可以稍后修改</p>
+<p>也可以<code>hexo new 你好！</code>，稍后可以在<code>{你的网址}/你好！</code>访问。但是，不能用<code>hexo new hello world</code>，必须<code>hexo new hello-world</code>或者<code>hexo new helloworld</code>都可以</p>
+<p>好的，假设我们刚刚执行的是<code>hexo new test</code>，待命令执行成功后，你应该可以在你的<strong><em>站点目录</em></strong>里找到一个名叫<code>source</code>的文件夹，打开它，你应该可以看到一个名叫<code>_posts</code>的文件夹，打开它，可以看到<code>test.md</code>（<code>test</code>就是前面所说的URL，也是你之前填的那个<code>xxx</code>）</p>
+<p>这就是这篇博文的Markdown源代码了，你可以随意地修改它，基本上所有常用的Markdown语法都能解析，但是Latex暂时不能，这一步等会再配置</p>
+<p>如果您平常经常写代码，您肯定会喜欢使用VS Code作为您的Markdown编辑器，VS Code支持几乎所有语言代码的高亮；如果您很少写代码，只是平常写一些文章，您或许会更加喜欢Typora</p>
+<p>Typora是什么呢？</p>
+<p>一个轻便但高级的Markdown编辑器</p>
+<p>尽管体积很小，但是支持图片/标题/表格/清单/代码块/图标/表情/高亮…，让你可以专注于你所写的内容。Typora还可以自动帮你实时生成文章的TOC，还可以实时字数统计，自动配对括号，甚至可以方便地导出为PDF/HTML/DOC等，也可以从这些类型地文档导入。</p>
+<p>官网地址：<a href="https://www.typora.io/" rel="external nofollow noopener noreferrer" target="_blank">https://www.typora.io/</a></p>
+<p>好的，打了这么久广告，让我们回归正题。</p>
+<p>按理说，你打开你新建完的markdown文件，会看到下面的一个模板：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">test</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">xxxx-xx-xx</span> <span class="attr">xx:xx:xx</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>好的，<code>title:</code>后面就是这篇文章的标题了，注意冒号是英文的，和文章名之间必须有一个空格，否则后面生成的时候会报错</p>
+<p><code>date:</code>后面是文章创作的时间，这个时间会由系统自动设置为你在Git Bash里创建这篇文章的时间，一般来说不用修改，<del>我曾经舍不得删一篇没用的测试文章，就把它的日期改成了0100-01-01 00:00:00，然后我发现年份必须在0100之后，否则好像会出一些Bug</del></p>
+<p><code>tags:</code>后面是这篇文章的标签，请按照以下格式书写：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">tags:</span> <span class="comment"># 注意，冒号后面最好加一个空格</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">标签1</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">标签2</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">标签3</span></span><br></pre></td></tr></table></figure>
+
+<p>当然了，如果你这篇文章只有一个标签，也可以用<code>tags: [标签1]</code>进行书写</p>
+<p>很明显，这些设置是不够的，我们可以加上<code>categories</code>的设置，也就是分类：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">test</span></span><br><span class="line"><span class="attr">date:</span> <span class="string">xxxx-xx-xx</span> <span class="attr">xx:xx:xx</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">标签1</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">标签2</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">标签3</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">[分类]</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注：Hexo不支持多个并列分类，只支持父子分类，但有些主题（比如我的主题Materialized）可以支持。在大多数主题（比如NexT）中，一篇文章使用多个category会导致后面的分类成为后面的分类成为前面分类的子分类，比如：</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">categories:</span> </span><br><span class="line"><span class="bullet">  -</span> <span class="string">分类1</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">分类2</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>会导致分类2成为分类1的子分类，而不是并列分类。</strong></p>
+<p>但是，在像Materialized的少数主题中，会把上面的语法当成并列分类显示。Theme-Materialized: <a href="https://github.com/theme-materialized/hexo-theme-materialized" target="_blank" rel="noopener">https://github.com/theme-materialized/hexo-theme-materialized</a></p>
+<p>好的。你已经完成了基本的文章设置操作，可以开始尽情地使用Markdown写文章啦~</p>
+<p>写完了以后，保存，回到Git Bash，输入<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</code>并静待完成即可。然后，你就可以在你的网站上愉快地查看你的博客了！</p>
+<p>备注（如果你是一步步跟着来的，不用看了，“尝试发布博客”那章有了）：</p>
+<ol>
+<li><code>hexo s</code>是<code>hexo server</code>的缩写，在本地预览站点</li>
+<li><code>hexo cl</code>是<code>hexo clean</code>的缩写，删除上次生成的站点HTML文件</li>
+<li><code>hexo g</code>是<code>hexo generate</code>的缩写，生成站点HTML文件</li>
+<li><code>hexo d</code>是<code>hexo deploy</code>的缩写，把生成的站点HTML文件发布到git仓库中（或者还有别的发布方式）</li>
+</ol>
+<p><strong>注意：<code>hexo clean</code>不能缩写为<code>hexo c</code>，因为存在命令<code>hexo config</code></strong></p>
+<h1 id="NexT主题高级美化"><a href="#NexT主题高级美化" class="headerlink" title="NexT主题高级美化"></a>NexT主题高级美化</h1><p>暂时咕咕qwq</p>
 <hr>
-<p>注：由于博主较为忙碌，本文暂时咕咕，更多请访问ouuan的博客相关文章 <a href="https://ouuan.github.io/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97" rel="external nofollow noopener noreferrer" target="_blank">https://ouuan.github.io/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97</a></p>
+<p>注：由于博主较为忙碌，本文更新极为缓慢，更多请访问ouuan的博客相关文章 <a href="https://ouuan.github.io/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97" rel="external nofollow noopener noreferrer" target="_blank">https://ouuan.github.io/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97</a></p>
 
       
     </div>
@@ -922,7 +965,7 @@
   <p><span>本文标题:</span>Hexo博客搭建—从入门到精通</p>
   <p><span>文章作者:</span>code004</p>
   <p><span>发布时间:</span>2019年08月25日 - 20:59:16</p>
-  <p><span>最后更新:</span>2019年08月29日 - 18:35:49</p>
+  <p><span>最后更新:</span>2019年09月14日 - 20:23:34</p>
   <p><span>原始链接:</span><a href="/posts/how-to-build-a-hexo-blog/" title="Hexo博客搭建—从入门到精通">https://code004.ml/posts/how-to-build-a-hexo-blog/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://code004.ml/posts/how-to-build-a-hexo-blog/" aria-label="复制成功！"></i></span>
   </p>
@@ -1303,7 +1346,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github-Coding-Gitee设置"><span class="nav-number">2.</span> <span class="nav-text">Github/Coding/Gitee设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github"><span class="nav-number">2.1.</span> <span class="nav-text">Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding"><span class="nav-number">2.2.</span> <span class="nav-text">Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitee"><span class="nav-number">2.3.</span> <span class="nav-text">Gitee</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">本地安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题选择与下载切换"><span class="nav-number">4.</span> <span class="nav-text">主题选择与下载切换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT主题基础配置"><span class="nav-number">5.</span> <span class="nav-text">NexT主题基础配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#发布博客"><span class="nav-number">6.</span> <span class="nav-text">发布博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#书写博客"><span class="nav-number">7.</span> <span class="nav-text">书写博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github-Coding-Gitee设置"><span class="nav-number">2.</span> <span class="nav-text">Github/Coding/Gitee设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github"><span class="nav-number">2.1.</span> <span class="nav-text">Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding"><span class="nav-number">2.2.</span> <span class="nav-text">Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitee"><span class="nav-number">2.3.</span> <span class="nav-text">Gitee</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">本地安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题选择与下载切换"><span class="nav-number">4.</span> <span class="nav-text">主题选择与下载切换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT主题基础配置"><span class="nav-number">5.</span> <span class="nav-text">NexT主题基础配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试发布博客"><span class="nav-number">6.</span> <span class="nav-text">测试发布博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#书写并发布博客"><span class="nav-number">7.</span> <span class="nav-text">书写并发布博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NexT主题高级美化"><span class="nav-number">8.</span> <span class="nav-text">NexT主题高级美化</span></a></li></ol></div>
             
 
           </div>

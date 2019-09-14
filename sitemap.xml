@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://code004.ml/posts/how-to-build-a-hexo-blog/</loc>
+    
+    <lastmod>2019-09-14T12:23:34.782Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://code004.ml/posts/recent-activities-of-gc-server/</loc>
     
     <lastmod>2019-09-13T04:08:56.565Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://code004.ml/404/index.html</loc>
     
     <lastmod>2019-08-29T11:29:50.929Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://code004.ml/posts/how-to-build-a-hexo-blog/</loc>
-    
-    <lastmod>2019-08-29T10:35:49.516Z</lastmod>
     
   </url>
   
