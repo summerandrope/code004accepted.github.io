@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://code004.ml/posts/notice/</loc>
+    <lastmod>2019-09-14</lastmod>
+  </url>  <url>
+    <loc>https://code004.ml/posts/notice-about-junior-grade-9/</loc>
+    <lastmod>2019-09-14</lastmod>
+  </url>  <url>
     <loc>https://code004.ml/posts/how-to-build-a-hexo-blog/</loc>
     <lastmod>2019-09-14</lastmod>
   </url>  <url>
@@ -24,9 +30,6 @@
   </url>  <url>
     <loc>https://code004.ml/posts/hack-noi-website/</loc>
     <lastmod>2019-08-29</lastmod>
-  </url>  <url>
-    <loc>https://code004.ml/posts/notice-about-junior-grade-9/</loc>
-    <lastmod>2019-08-23</lastmod>
   </url>  <url>
     <loc>https://code004.ml/posts/a-god-post-on-lgoj/</loc>
     <lastmod>2019-08-20</lastmod>

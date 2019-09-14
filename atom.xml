@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://code004.ml/"/>
-  <updated>2019-09-13T04:08:56.565Z</updated>
+  <updated>2019-09-14T16:54:57.769Z</updated>
   <id>https://code004.ml/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>公告板</title>
+    <link href="https://code004.ml/posts/notice/"/>
+    <id>https://code004.ml/posts/notice/</id>
+    <published>2019-09-14T16:10:39.000Z</published>
+    <updated>2019-09-14T16:54:57.769Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note warning">警告：在访问本站任何页面前，请仔细阅读本文，以免给您带来不必要的麻烦！任何因未阅读本文造成的后果请自己承担！</div><a id="more"></a><h1 id="关于版权"><a href="#关于版权" class="headerlink" title="关于版权"></a>关于版权</h1><p>本站文章可以分为三类：有意义原创，转载与无意义原创</p><p>对于有意义原创文章，会在文章底部再次声明版权协议。对于此类文章，欢迎您分享原文地址，允许不超过文章Markdown代码字符数30%的摘录，但请在醒目位置附上原文链接及作者。未经许可禁止任何形式的全文转载。根据 CC BY-NC-ND 协议，您不被允许发布基于文章的再创作，也就是说，您不能对文章内容进行修改后再发布，尽管文章可能出现知识性错误。如果文章出现知识性错误，请在评论区告知（或者，如果因为某种原因，此文章没有评论区，请在留言板告知），而不是私自摘录并修改。</p><p>对于转载文章，我会声明原文地址与作者。如果您认为我侵犯了您的版权，请在评论区告知，我会立即删除相关文章并私下商谈。此类文章在转载或摘录前，请仔细阅读原作者注明的协议，否则后果自负。</p><p>对于无意义原创文章，底部既没有再次声明版权协议，文章中又没有声明原文地址或作者。此类文章，允许全文转载，但请在醒目位置附上原文链接及作者。同样地，根据 CC BY-NC-ND 协议，您也不允许发布基于文章的再创作。</p><p>本站在您复制文字前加上了提醒（但是仍然可以复制成功，如果不成功请重试），希望您尊重博主的版权，否则一切后果自负。</p><h1 id="关于评论"><a href="#关于评论" class="headerlink" title="关于评论"></a>关于评论</h1><p>本站原采用Gitalk系统，后期考虑到其不稳定，且拥有读取用户所有公开仓库（<code>public repo</code>）的权限，不完全安全，故现已改用Utterances作为评论系统。在您登录时，无需对任何应用进行授权。如果您已登录Github账号，请点击评论框右下角的”Sign in to comment”，登录成功后您会自动被重定向回到相关界面；如果您未登录Github账号，点击上述按钮后会出现Github的登录界面，照常登录即可。</p><p>对于评论区中吵架/骂人等不适当的言论，博主保留删除的权利。其他正常评论，有小概率可能因为数据迁移或博主手滑而导致丢失，对此博主不承担任何责任。</p><p>评论加载速度可能比较慢，如果超出了您忍受的限度，请尝试<a href="https://code004.coding.me" rel="external nofollow noopener noreferrer" target="_blank">切换到Coding线路</a>再次登录。</p><h1 id="关于学术问题"><a href="#关于学术问题" class="headerlink" title="关于学术问题"></a>关于学术问题</h1><p>如果本站的文章中出现任何学术问题，请不要私自转载并修正错误。请在相关文章的评论区告知。如果文章没有评论区，请在留言板告知。对于为了修改错误而进行的违规摘录/转载，按照上述版权协议处理。</p><h1 id="关于本站中的代码与文件"><a href="#关于本站中的代码与文件" class="headerlink" title="关于本站中的代码与文件"></a>关于本站中的代码与文件</h1><p>由于博主是个很喜欢敲代码/写工程的coder，本站中难免会出现大量代码与文件。现作下列声明：</p><ol><li>本站所有可能对您的电脑造成危害的代码或文件均会特别告知，如果因为使用/查看了危险代码或文件造成您的损失，本站概不负责。</li><li>本站所有未特别声明的代码均为在博主本机或虚拟机上测试通过的代码，文件均为博主正常使用无危害的文件。如果因为使用/查看了安全代码或文件造成您的损失，本站同样概不负责。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;note warning&quot;&gt;警告：在访问本站任何页面前，请仔细阅读本文，以免给您带来不必要的麻烦！任何因未阅读本文造成的后果请自己承担！&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="公告" scheme="https://code004.ml/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>GC Server 的最新消息</title>
@@ -266,7 +286,7 @@
     <published>2019-08-19T13:51:33.000Z</published>
     <updated>2019-08-19T17:45:53.812Z</updated>
     
-    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="此文为重要机密信息，除博主外禁止访问" />    <label for="pass">此文为重要机密信息，除博主外禁止访问</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="此文为重要机密信息，除博主外禁止访问" />    <label for="pass">此文为重要机密信息，除博主外禁止访问</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
@@ -284,7 +304,7 @@
     <link href="https://code004.ml/posts/notice-about-junior-grade-9/"/>
     <id>https://code004.ml/posts/notice-about-junior-grade-9/</id>
     <published>2019-08-16T17:18:24.000Z</published>
-    <updated>2019-08-23T11:05:10.823Z</updated>
+    <updated>2019-09-14T16:54:52.676Z</updated>
     
     <content type="html"><![CDATA[<p>众所周知，在2019年8月23日（提前开学），本人将正式成为一名初三学生。由于 元月调考/四月调考/中考 这三场考试对每一位考生都意义重大，影响未来命运，现特别给出以下公告：</p><h1 id="关于进入九年级后此博客处理办法的公告"><a href="#关于进入九年级后此博客处理办法的公告" class="headerlink" title="关于进入九年级后此博客处理办法的公告"></a>关于进入九年级后此博客处理办法的公告</h1><p>2019.08.17 01:18:24 公告作者：code004/code004Accepted</p><p>因为我即将进入学习紧张的初三，故此博客很可能没有时间来更新。之前的一周2/3更，现更改为一月1/2更，感谢谅解。此博客会保持开放，也仍然欢迎大家的评论和友链申请！</p><h1 id="The-Notice-About-Junior-Grade-9"><a href="#The-Notice-About-Junior-Grade-9" class="headerlink" title="The Notice About Junior Grade 9"></a>The Notice About Junior Grade 9</h1><p>2019.08.17 01:18:24 Author: code004/code004Accepted</p><p>Because that I am entering Junior Graduation Grade (Grade 9), I would not possibly have too much time to update my blog. I will probably only have time to update my blog once to twice a month. This website will remain open and it still welcomes all your comments!</p>]]></content>
     
@@ -298,7 +318,7 @@
     
     </summary>
     
-      <category term="临时公告" scheme="https://code004.ml/categories/%E4%B8%B4%E6%97%B6%E5%85%AC%E5%91%8A/"/>
+      <category term="公告" scheme="https://code004.ml/categories/%E5%85%AC%E5%91%8A/"/>
     
     
       <category term="学校" scheme="https://code004.ml/tags/%E5%AD%A6%E6%A0%A1/"/>
@@ -479,8 +499,10 @@
     
       <category term="项目" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/"/>
     
+      <category term="GC Server" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/GC-Server/"/>
     
-      <category term="GC Server" scheme="https://code004.ml/tags/GC-Server/"/>
+    
+      <category term="开发工作" scheme="https://code004.ml/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C/"/>
     
   </entry>
   
@@ -503,8 +525,10 @@
     
       <category term="项目" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/"/>
     
+      <category term="GC Server" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/GC-Server/"/>
     
-      <category term="GC Server" scheme="https://code004.ml/tags/GC-Server/"/>
+    
+      <category term="开发工作" scheme="https://code004.ml/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C/"/>
     
   </entry>
   
@@ -526,30 +550,10 @@
     
       <category term="项目" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/"/>
     
-    
-      <category term="GC Server" scheme="https://code004.ml/tags/GC-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GC Server 预览版本</title>
-    <link href="https://code004.ml/posts/gc-server-preview-version/"/>
-    <id>https://code004.ml/posts/gc-server-preview-version/</id>
-    <published>2019-05-20T15:30:36.000Z</published>
-    <updated>2019-05-20T15:30:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>说一下，之所以最近GC Server子站没更新，是因为网站的设置出了点问题。这个Bug会很快修复的，放心~</p><a id="more"></a><h1 id="最近的版本"><a href="#最近的版本" class="headerlink" title="最近的版本"></a>最近的版本</h1><p>最近有以下版本发行：</p><ul><li>五四专版（Special）</li><li>五四专版（Super）</li><li>预览版（Preview）</li></ul><p>（按照发行时间从先到后，所以本文更新截止，最新的是预览版）</p><p>老规矩，在两个链接下载，自己去分站的之前Release找，链接一直不变。</p><p>谢谢~</p><p>PS：</p><p>最新Preview版加入很多设置功能，欢迎测试并反馈Bug~</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;p&gt;说一下，之所以最近GC Server子站没更新，是因为网站的设置出了点问题。这个Bug会很快修复的，放心~&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="项目" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/"/>
+      <category term="GC Server" scheme="https://code004.ml/categories/%E9%A1%B9%E7%9B%AE/GC-Server/"/>
     
     
-      <category term="GC Server" scheme="https://code004.ml/tags/GC-Server/"/>
+      <category term="GCS发布" scheme="https://code004.ml/tags/GCS%E5%8F%91%E5%B8%83/"/>
     
   </entry>
   
